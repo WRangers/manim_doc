@@ -6,11 +6,16 @@
 Welcome to Manim's documentation!
 =====================================
 
+.. image:: ../README.assets/logo_cut.png
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :html_logo:
+   :maxdepth: 7
+   :caption: Installation
 
    1_installation/1_installation.rst
+
+   :caption: Getting Start
 
 
 
