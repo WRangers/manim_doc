@@ -7,7 +7,7 @@ Welcome to manim_doc's documentation!
 =====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 7
    :caption: Contents:
 
    1_installation/1_installation.rst

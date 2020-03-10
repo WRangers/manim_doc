@@ -17,7 +17,7 @@ import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
-project = 'manim_doc'
+project = 'Manim Chinese Doc'
 copyright = '2020, 7thD'
 author = '7thD'
 

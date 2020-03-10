@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to manim_doc's documentation!
+Welcome to Manim's documentation!
 =====================================
 
 .. toctree::
