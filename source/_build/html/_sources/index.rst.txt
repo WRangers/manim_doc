@@ -9,14 +9,11 @@ Welcome to Manim's documentation!
 .. image:: ../README.assets/logo_cut.png
 
 .. toctree::
-   :html_logo:
-   :maxdepth: 7
+   :maxdepth: 4
    :caption: Installation
+   :number: 
 
    1_installation/1_installation.rst
-
-   :caption: Getting Start
-
 
 
 Indices and tables
