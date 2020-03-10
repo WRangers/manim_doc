@@ -10,6 +10,8 @@ Welcome to manim_doc's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   1_installation/1_installation.rst
+
 
 
 Indices and tables
