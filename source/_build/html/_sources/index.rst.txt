@@ -11,9 +11,29 @@ Welcome to Manim's documentation!
 .. toctree::
    :maxdepth: 4
    :caption: Installation
-   :number: 
+   :numbered:
 
    1_installation/1_installation.rst
+   1_installation/2_faq.rst
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Getting Started
+   :numbered:
+
+   2_getst/0_hw.rst
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Reference
+   :numbered:
+
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Devevelop
+   :numbered:
 
 
 Indices and tables
