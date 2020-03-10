@@ -8,7 +8,9 @@
 <img alt="" src="README.assets\license-MIT-blue.svg" style="margin: 0 auto;" />
 </div>
 
-> 此文档非官方,是为本人业余所为!若有兴趣一同撰写文档,请邮件联系我:wjxrangers@gmail.com.
+---
+
+> 此文档非官方文档,是本人业余所为!若有兴趣一同撰写文档,请邮件联系我:wjxrangers@gmail.com.
 
 文档托管于[ReadTheDoc](https://readthedocs.org/)网站,请移步[Manim Chinese Doc](https://manim-doc.readthedocs.io/zh/latest/).
 
