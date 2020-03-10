@@ -2,7 +2,7 @@
 
 ![logo](README.assets/logo_cut.png)
 
-<div style="text-align: center;">
+<div align="center">
 <img alt="" src="README.assets\doc-passing-green.svg" style="margin: 0 auto;" />
 <img alt="" src="README.assets\version-v0.01-orange.svg" style="margin: 0 auto;" />
 <img alt="" src="README.assets\license-MIT-blue.svg" style="margin: 0 auto;" />
