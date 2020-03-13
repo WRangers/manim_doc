@@ -1,7 +1,9 @@
 FAQ
 ====
 
-本节结合个人的经验,参考 **manim的交流群** (862671480) 的文档进行编写.该文档由 `鹤翔万里` 和 `catfish` 编写.
+本节结合个人的经验,部分参考 **manim交流群** (862671480) 的文档,该文档由 `鹤翔万里` 和 `catfish` 编写.
+
+.. attention:: 此节不仅包含了安装时出现的问题,也包含了各种其他问题,若暂时没有遇到或不需要则不必要看.
 
 LaTex问题
 -----------
@@ -204,8 +206,9 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
 
 # TODO: 完善细节
 
-如何改变背景颜色
+如何改变背景颜色 [1]_
 ----------------------
+
 
 .. code-block:: python
 
@@ -219,8 +222,8 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
 
 .. image:: ChangeBackgroundColor.png
 
-如何去除字符的描边
-------------------
+如何去除字符的描边 [1]_
+-----------------------
 
 .. code-block:: python
 
@@ -244,3 +247,5 @@ manimlib中的gif输出是没有问题的,但最新的manim repo进行更新后�
 你需要安装manimlib这个包,找到 ``manimlib/config.py`` 跟克隆下来的manim仓库中的 ``manimlib/config.py`` 进行比对,参照 `更新 <https://github.com/3b1b/manim/pull/529/files>`_ 进行更改.
 
 你可以直接在我的Repo上下载这个 `文件 <https://github.com/WRangers/manim/blob/master/manimlib/config.py>`_ 进行替换.
+
+.. [1] `AnimationsWithManim/English/extra/faqs/faqs.md <https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/faqs/faqs.md>`_
