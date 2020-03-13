@@ -14,7 +14,7 @@ LaTex问题
 
 解决方案二:手动安装或者更换镜像源头! `这里 <https://www.zhihu.com/question/26584112>`_ 有一些解决方案!
 
-Manim编译需要的LaTex宏包你可以在 ``\manimlib\tex_template.tex`` 和 ``\manimlib\ctex_template.tex`` 中找到;前者是英文模板,后者是中文模板.怎么使manim支持中文,后面会讲到.
+Manim编译需要的LaTex宏包你可以在 ``/manimlib/tex_template.tex`` 和 ``/manimlib/ctex_template.tex`` 中找到;前者是英文模板,后者是中文模板.怎么使manim支持中文,后面会讲到.
 
 你可以打开电脑中的MiKTeX Console:
 
@@ -31,7 +31,7 @@ Manim编译需要的LaTex宏包你可以在 ``\manimlib\tex_template.tex`` 和 `
 
 参考 `Manim fast tutorial - How to add more LaTeX packages? <Manim fast tutorial - How to add more LaTeX packages?>`_
 
-更改 ``\manimlib\tex_template.tex`` 或者 ``\manimlib\ctex_template.tex`` 模板即可.但如果你不熟悉LaTex请不要随便更改!
+更改 ``/manimlib/tex_template.tex`` 或者 ``/manimlib/ctex_template.tex`` 模板即可.但如果你不熟悉LaTex请不要随便更改!
 
 以我的LaTex模板为例:
 
@@ -39,53 +39,53 @@ Manim编译需要的LaTex宏包你可以在 ``\manimlib\tex_template.tex`` 和 `
     :emphasize-lines: 19-33, 35-37
     :linenos:
 
-    \documentclass[preview]{standalone}
+    /documentclass[preview]{standalone}
 
-    \usepackage[english]{babel}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{dsfont}
-    \usepackage{setspace}
-    \usepackage{tipa}
-    \usepackage{relsize}
-    \usepackage{textcomp}
-    \usepackage{mathrsfs}
-    \usepackage{wasysym}
-    \usepackage{ragged2e}
-    \usepackage{physics}
-    \usepackage{listings}
-    \usepackage{xcolor}
-    % \usepackage{microtype}
+    /usepackage[english]{babel}
+    /usepackage{amsmath}
+    /usepackage{amssymb}
+    /usepackage{dsfont}
+    /usepackage{setspace}
+    /usepackage{tipa}
+    /usepackage{relsize}
+    /usepackage{textcomp}
+    /usepackage{mathrsfs}
+    /usepackage{wasysym}
+    /usepackage{ragged2e}
+    /usepackage{physics}
+    /usepackage{listings}
+    /usepackage{xcolor}
+    % /usepackage{microtype}
 
     %% 字体设置
-    \usepackage[T1,OT1]{fontenc}
-    \usepackage{palatino}  % english defalut font
-    \usepackage{calligra}  % hand-writing \calligra
-    \newcommand{\sz}[1]{\fontencoding{OT1}\fontfamily{pplj}\fontseries{m}\selectfont #1}   % non-aligned number
-    \newcommand{\gt}[1]{\fontencoding{OT1}\fontfamily{pgoth}\fontseries{m}\selectfont #1}  % Gothic font
+    /usepackage[T1,OT1]{fontenc}
+    /usepackage{palatino}  % english defalut font
+    /usepackage{calligra}  % hand-writing /calligra
+    /newcommand{/sz}[1]{/fontencoding{OT1}/fontfamily{pplj}/fontseries{m}/selectfont #1}   % non-aligned number
+    /newcommand{/gt}[1]{/fontencoding{OT1}/fontfamily{pgoth}/fontseries{m}/selectfont #1}  % Gothic font
 
     %% xelatex font
-    \usepackage{fontspec}
-    \usepackage{xeCJK}
-    \setCJKmainfont[BoldFont={Noto Sans S Chinese}]{Noto Serif CJK SC}
-    \setCJKmonofont{Noto Serif CJK SC}
-    \setCJKsansfont{Noto Serif CJK SC SemiBold}  % \sf Chinese title font
-    \setmainfont{Palatino-Roman}    % \sf English hand-writing font
-    \setsansfont{Zapfino}
+    /usepackage{fontspec}
+    /usepackage{xeCJK}
+    /setCJKmainfont[BoldFont={Noto Sans S Chinese}]{Noto Serif CJK SC}
+    /setCJKmonofont{Noto Serif CJK SC}
+    /setCJKsansfont{Noto Serif CJK SC SemiBold}  % /sf Chinese title font
+    /setmainfont{Palatino-Roman}    % /sf English hand-writing font
+    /setsansfont{Zapfino}
 
     %% 绘图工具
-    \usepackage[siunitx,RPvoltages,european]{circuitikz}
-    \usepackage{tikz}
+    /usepackage[siunitx,RPvoltages,european]{circuitikz}
+    /usepackage{tikz}
 
-    % \DisableLigatures{encoding = *, family = * }
+    % /DisableLigatures{encoding = *, family = * }
 
-    \linespread{1}
+    /linespread{1}
 
-    \begin{document}
+    /begin{document}
 
     YourTextHere
 
-    \end{document}
+    /end{document}
 
 **字体设置** :这里可以自定义字体,不详细展开.
 
@@ -108,19 +108,19 @@ Manim编译需要的LaTex宏包你可以在 ``\manimlib\tex_template.tex`` 和 `
     class ExampleTikz(Scene):
         def construct(self):
             circuit = TikzMobject(r"""
-                \begin{circuitikz}[american voltages]
-                \draw
+                /begin{circuitikz}[american voltages]
+                /draw
                 (0,0) to [short, *-] (6,0)
-                to [V, l_=$\mathrm{j}{\omega}_m \underline{\psi}^s_R$] (6,2) 
+                to [V, l_=$/mathrm{j}{/omega}_m /underline{/psi}^s_R$] (6,2) 
                 to [R, l_=$R_R$] (6,4) 
-                to [short, i_=$\underline{i}^s_R$] (5,4) 
-                (0,0) to [open,v^>=$\underline{u}^s_s$] (0,4) 
-                to [short, *- ,i=$\underline{i}^s_s$] (1,4) 
+                to [short, i_=$/underline{i}^s_R$] (5,4) 
+                (0,0) to [open,v^>=$/underline{u}^s_s$] (0,4) 
+                to [short, *- ,i=$/underline{i}^s_s$] (1,4) 
                 to [R, l=$R_s$] (3,4)
-                to [L, l=$L_{\sigma}$] (5,4) 
-                to [short, i_=$\underline{i}^s_M$] (5,3) 
+                to [L, l=$L_{/sigma}$] (5,4) 
+                to [short, i_=$/underline{i}^s_M$] (5,3) 
                 to [L, l_=$L_M$] (5,0); 
-                \end{circuitikz}
+                /end{circuitikz}
                 """)
             self.play(Write(circuit))
             self.wait()
@@ -130,7 +130,7 @@ Manim编译需要的LaTex宏包你可以在 ``\manimlib\tex_template.tex`` 和 `
 中文支持问题
 -------------
 
-首先要确保你的LaTex能够正常编译!在 ``manimlib\constants.py`` 找到 ``TEX_USE_CTEX`` 设置为 ``True``.
+首先要确保你的LaTex能够正常编译!在 ``manimlib/constants.py`` 找到 ``TEX_USE_CTEX`` 设置为 ``True``.
 
 如果你的LaTex在英文模式下能够正常编译的话,这里应该问题就不大了.如果出现 ``xeLatex error converting to dvi`` 报错,很大程度上还是宏包问题.这里中文使用的是 ``ctex`` 宏包,要注意有没有安装.
 
@@ -212,7 +212,7 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
     class ChangeBackgroundColor(Scene):
         CONFIG={
             "camera_config":{"background_color":RED}, # 改变背景色
-            "text":TexMobject(r"\frac{d}{dx}\Bigr|_{y=2}").scale(5)
+            "text":TexMobject(r"/frac{d}{dx}/Bigr|_{y=2}").scale(5)
         }
         def construct(self):
             self.add(self.text)
@@ -227,9 +227,20 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
     class RemoveBackgroundStrokeWidth(ChangeBackgroundColor):
         CONFIG={
             "text":TexMobject(
-                r"\frac{d}{dx}\Bigr|_{y=2}",
+                r"/frac{d}{dx}/Bigr|_{y=2}",
                 background_stroke_width=0, # 设置描边粗细 
                 ).scale(5)
         }
 
 .. image:: RemoveBackgroundStrokeWidth.png
+
+
+gif输出问题
+-----------
+
+manimlib中的gif输出是没有问题的,但最新的manim repo进行更新后没有办法正确输出gif(至少我是这样的),如果你也遇到相同的情况,只需要把相关的设置改回去就可以了.
+
+
+你需要安装manimlib这个包,找到 ``manimlib/config.py`` 跟克隆下来的manim仓库中的 ``manimlib/config.py`` 进行比对,参照 `更新 <https://github.com/3b1b/manim/pull/529/files>`_ 进行更改.
+
+你可以直接在我的Repo上下载这个 `文件 <https://github.com/WRangers/manim/blob/master/manimlib/config.py>`_ 进行替换.

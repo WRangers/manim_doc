@@ -50,7 +50,7 @@ FFmpeg是多媒体处理库,manim的视频、图片、音乐插入与生成都�
 
 ::
 
-    pip install <Cairo的路径>(比如 C:\path\to\wheel\pycairo‑1.18.0‑cp37‑cp37m‑win32.whl)
+    pip install <Cairo的路径>(比如 C:/path/to/wheel/pycairo‑1.18.0‑cp37‑cp37m‑win32.whl)
 
 .. important::
     如果你安装的是Anaconda,需要先启动Anaconda的环境,在命令行中输入 ``conda activate <环境名称>`` 如果省略 ``环境名称`` 则默认启动 ``root`` 环境.后续的命令行操作也都如此.
