@@ -12,7 +12,7 @@
 #
 import os
 import sys
-# sys.path.insert('', os.path.abspath('.'))
+# sys.path.insert('/', os.path.abspath('.'))
 
 
 import sphinx_rtd_theme
