@@ -3,7 +3,8 @@ import manimlib.config
 import manimlib.constants
 import manimlib.extract_scene
 import manimlib.stream_starter
-
+import sys
+sys.path.append('..')  # Used for Sphinx
 
 def main():
     args = manimlib.config.parse_cli()
