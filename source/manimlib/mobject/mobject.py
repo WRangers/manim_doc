@@ -1,26 +1,26 @@
-# from functools import reduce
-# import copy
-# import itertools as it
-# import operator as op
+from functools import reduce
+import copy
+import itertools as it
+import operator as op
 import os
-# import random
+import random
 import sys
 
-# from colour import Color
-# import numpy as np
+from colour import Color
+import numpy as np
 
-# import manimlib.constants as consts
-# from manimlib.constants import *
-# from manimlib.container.container import Container
-# from manimlib.utils.color import color_gradient
-# from manimlib.utils.color import interpolate_color
-# from manimlib.utils.iterables import list_update
-# from manimlib.utils.iterables import remove_list_redundancies
-# from manimlib.utils.paths import straight_path
-# from manimlib.utils.simple_functions import get_parameters
-# from manimlib.utils.space_ops import angle_of_vector
-# from manimlib.utils.space_ops import get_norm
-# from manimlib.utils.space_ops import rotation_matrix
+import manimlib.constants as consts
+from manimlib.constants import *
+from manimlib.container.container import Container
+from manimlib.utils.color import color_gradient
+from manimlib.utils.color import interpolate_color
+from manimlib.utils.iterables import list_update
+from manimlib.utils.iterables import remove_list_redundancies
+from manimlib.utils.paths import straight_path
+from manimlib.utils.simple_functions import get_parameters
+from manimlib.utils.space_ops import angle_of_vector
+from manimlib.utils.space_ops import get_norm
+from manimlib.utils.space_ops import rotation_matrix
 
 sys.path.append('../..')
 sys.path.append('..')
