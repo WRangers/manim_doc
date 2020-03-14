@@ -32,10 +32,11 @@ Happy maniming!
 
    1_installation/1_installation.rst
    1_installation/2_faq.rst
+   1_installation/3_vscode.rst
 
 .. toctree::
    :maxdepth: 4
-   :caption: Getting Started
+   :caption: Tutorial
    :numbered:
 
    2_getst/0_hw.rst
@@ -45,11 +46,21 @@ Happy maniming!
    :caption: Reference
    :numbered:
 
+   3_reference/structure/file.rst
+   3_reference/structure/constants.rst
+
+   3_reference/mobject/mobject.rst
+   3_reference/mobject/vmobject.rst
+   3_reference/mobject/pmobject.rst
+   3_reference/mobject/svg_mobject.rst
+   3_reference/mobject/image_mobject.rst
+   3_reference/mobject/tex_mobject.rst
+   3_reference/mobject/text_mobject.rst
 
 
 .. toctree::
    :maxdepth: 4
-   :caption: Devevelop
+   :caption: Advanced Usage
    :numbered:
 
 

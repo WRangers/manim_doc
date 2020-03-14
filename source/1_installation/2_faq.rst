@@ -14,7 +14,7 @@ LaTex问题
 
 解决方案一:科学上网!这是最佳方案,因为可以持续更新宏包!
 
-解决方案二:手动安装或者更换镜像源头! `这里 <https://www.zhihu.com/question/26584112>`_ 有一些解决方案!
+解决方案二:手动安装或者更换镜像源! `这里 <https://www.zhihu.com/question/26584112>`_ 有一些解决方案!
 
 Manim编译需要的LaTex宏包你可以在 ``/manimlib/tex_template.tex`` 和 ``/manimlib/ctex_template.tex`` 中找到;前者是英文模板,后者是中文模板.怎么使manim支持中文,后面会讲到.
 
@@ -172,8 +172,8 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
 
 # TODO:完善细节.
 
-改变视频输出地址
------------------
+如何改变视频输出地址
+--------------------
 
 个人不建议更改!默认就好,方便管理. 如果要更改,可以参考 `Manim tutorial | Settings - Change media directory <https://www.youtube.com/watch?v=I9rHHiKqTWY>`_ 设置.
 
