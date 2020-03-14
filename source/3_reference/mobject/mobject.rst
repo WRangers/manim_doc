@@ -3,5 +3,5 @@ Mobject
 
 
 
-.. automodule:: manimlib.mobject.mobject
+.. automodule:: mobject.mobject
     :members: Mobject,Group
