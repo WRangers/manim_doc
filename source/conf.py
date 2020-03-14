@@ -12,8 +12,7 @@
 #
 import os
 import sys
-# sys.path.insert('/', os.path.abspath('.'))
-sys.path.append('/manimlib')
+sys.path.insert(0, os.path.abspath('../..'))
 
 import sphinx_rtd_theme
 
