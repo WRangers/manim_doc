@@ -26,13 +26,20 @@ Happy maniming!
 .. _英文文档: https://manim-tb-manual.000webhostapp.com/
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    :caption: Installation
+
+   1_installation/win.rst
+   1_installation/linux.rst
+   1_installation/macos.rst
+
+.. toctree::
+   :maxdepth: 2
+   :caption: FAQ and Others
    :numbered:
 
-   1_installation/1_installation.rst
-   1_installation/2_faq.rst
-   1_installation/3_vscode.rst
+   faq_others/faq.rst
+   faq_others/vscode.rst
 
 .. toctree::
    :maxdepth: 4
@@ -44,7 +51,7 @@ Happy maniming!
 .. toctree::
    :maxdepth: 4
    :caption: Reference
-   :numbered:
+   :numbered: 
 
    3_reference/structure/file.rst
    3_reference/structure/constants.rst
