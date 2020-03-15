@@ -29,7 +29,7 @@ Manim编译需要的LaTex宏包你可以在 ``/manimlib/tex_template.tex`` 和 `
 在上面的方框中输入宏包名称来检查该宏包是否安装.
 
 使LaTex支持更多的Latex宏包/字体
-----------------------------
+----------------------------------
 
 参考 `Manim fast tutorial - How to add more LaTeX packages? <Manim fast tutorial - How to add more LaTeX packages?>`_
 
@@ -166,28 +166,28 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
 有了GPU的加持,你会体验到编译速度的飞跃,但对于大规模的计算场景,如多个对象淡出、Update动画等,速度会回归龟速.
 
 编译动态条问题
---------------
+------------------
 
 如果你不喜欢编译时的动态条,可以参考 `Manim tutorial | Settings - Leave the progress bars by default <https://www.youtube.com/watch?v=K8dVFqXR2JM>`_ 去除.
 
 # TODO:完善细节.
 
 如何改变视频输出地址
---------------------
+----------------------
 
 个人不建议更改!默认就好,方便管理. 如果要更改,可以参考 `Manim tutorial | Settings - Change media directory <https://www.youtube.com/watch?v=I9rHHiKqTWY>`_ 设置.
 
 # TODO:完善细节.
 
 如何在终端中设置输出的帧率
--------------------------
+-----------------------------
 
 参考 `Manim tutorial | Settings - Render faster, set FPS via terminal <https://www.youtube.com/watch?v=cyIz0Oh3lWY>`_ 进行设置.
 
 # TODO:完善细节.
 
 添加声音、SVG和图像
-------------------
+-----------------------
 
 参考 `Manim tutorial | 7 - Add sounds, svgs and images <https://www.youtube.com/watch?v=tsMGRN3ZfAg>`_ 进行设置.
 
@@ -239,7 +239,7 @@ Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你
 
 
 gif输出问题
------------
+--------------
 
 manimlib中的gif输出是没有问题的,但最新的manim repo进行更新后没有办法正确输出gif(至少我是这样的),如果你也遇到相同的情况,只需要把相关的设置改回去就可以了.
 

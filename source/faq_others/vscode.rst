@@ -1,7 +1,7 @@
 VS Code配置
 ============
 
-此节基于Bilibili Up主<pdcxs>的文章: `配置Manim自动编译环境(仅限VS Code Win) <https://www.bilibili.com/read/cv4152112>`_ .
+此节基于Bilibili Up主 `pdcxs` 的文章: `配置Manim自动编译环境(仅限VS Code Win) <https://www.bilibili.com/read/cv4152112>`_ 进行改进.
 
 
 如果你使用的是Visual Studio Code的话,可以配置自动编译,而不需要每一次手动输入 ``python manim.py example_scenes.py SquareToCircle -pl`` 这样一长串的代码.

@@ -51,7 +51,6 @@ Happy maniming!
 .. toctree::
    :maxdepth: 4
    :caption: Reference
-   :numbered: 
 
    3_reference/structure/file.rst
    3_reference/structure/constants.rst
