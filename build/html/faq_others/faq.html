@@ -1,0 +1,492 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>FAQ &mdash; Manim Chinese Doc 0.01 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="VS Code配置" href="vscode.html" />
+    <link rel="prev" title="Mac OS" href="../1_installation/macos.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Manim Chinese Doc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_installation/win.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_installation/linux.html">GNU/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_installation/macos.html">Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ and Others</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#latex">LaTex问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latexlatex">使LaTex支持更多的Latex宏包/字体</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">中文支持问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">字体问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">编译过慢问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">编译动态条问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">如何改变视频输出地址</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">如何在终端中设置输出的帧率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#svg">添加声音、SVG和图像</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id9">添加声音</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">添加SVG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">添加图像</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id13">如何改变背景颜色 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">如何去除字符的描边 </a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gif">gif输出问题</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vscode.html">VS Code配置</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_getst/hw.html">Hello World</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_getst/compile.html">编译选项</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_reference/structure/file.html">Manimlib架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_reference/structure/constants.html">基本参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_reference/mobject/mobject.html">Mobject</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Manim Chinese Doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>FAQ</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/faq_others/faq.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="永久链接至标题">¶</a></h1>
+<p>本节结合个人的经验,部分参考 <strong>manim交流群</strong> (862671480) 的文档,该文档由 <cite>鹤翔万里</cite> 和 <cite>catfish</cite> 编写.</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>此节不仅包含了安装时出现的问题,也包含了各种其他问题,若暂时没有遇到或不需要则不必要看.</p>
+</div>
+<div class="section" id="latex">
+<h2>LaTex问题<a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+<p>如果你尝试编译 <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code> 中的其他动画类,出现报错 <code class="docutils literal notranslate"><span class="pre">Latex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">dvi</span></code> 的话,那就对了.</p>
+<p>LaTex是非常折腾的东西,但如果你熟悉了的话也就那样吧.这里报错最大的问题其实是LaTex的一些宏包没有安装好,而很多MiKTeX宏包安装是连接到国外的服务器.如果你科学上网的话,这里应该不成问题,因为Latex会自动安装缺失的宏包.如果没有的话,因为连接超时下载不到宏包无法正确编译而报错.</p>
+<p>解决方案一:科学上网!这是最佳方案,因为可以持续更新宏包!</p>
+<p>解决方案二:手动安装或者更换镜像源! <a class="reference external" href="https://www.zhihu.com/question/26584112">这里</a> 有一些解决方案!</p>
+<p>Manim编译需要的LaTex宏包你可以在 <code class="docutils literal notranslate"><span class="pre">/manimlib/tex_template.tex</span></code> 和 <code class="docutils literal notranslate"><span class="pre">/manimlib/ctex_template.tex</span></code> 中找到;前者是英文模板,后者是中文模板.怎么使manim支持中文,后面会讲到.</p>
+<p>你可以打开电脑中的MiKTeX Console:</p>
+<img alt="../_images/2020-03-13-14-32-19.png" src="../_images/2020-03-13-14-32-19.png" />
+<p>选择 <code class="docutils literal notranslate"><span class="pre">Switch</span> <span class="pre">to</span> <span class="pre">MiKTeX</span> <span class="pre">Console</span> <span class="pre">administrator</span> <span class="pre">mode</span></code> 进入管理员模式,点击左手边的 <code class="docutils literal notranslate"><span class="pre">Package</span></code> .</p>
+<img alt="../_images/2020-03-13-14-35-23.png" src="../_images/2020-03-13-14-35-23.png" />
+<p>在上面的方框中输入宏包名称来检查该宏包是否安装.</p>
+</div>
+<div class="section" id="latexlatex">
+<h2>使LaTex支持更多的Latex宏包/字体<a class="headerlink" href="#latexlatex" title="永久链接至标题">¶</a></h2>
+<p>参考 <a class="reference external" href="Manimfasttutorial-HowtoaddmoreLaTeXpackages?">Manim fast tutorial - How to add more LaTeX packages?</a></p>
+<p>更改 <code class="docutils literal notranslate"><span class="pre">/manimlib/tex_template.tex</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">/manimlib/ctex_template.tex</span></code> 模板即可.但如果你不熟悉LaTex请不要随便更改!</p>
+<p>以我的LaTex模板为例:</p>
+<div class="highlight-latex notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47</pre></div></td><td class="code"><div class="highlight"><pre><span></span>/documentclass[preview]<span class="nb">{</span>standalone<span class="nb">}</span>
+
+/usepackage[english]<span class="nb">{</span>babel<span class="nb">}</span>
+/usepackage<span class="nb">{</span>amsmath<span class="nb">}</span>
+/usepackage<span class="nb">{</span>amssymb<span class="nb">}</span>
+/usepackage<span class="nb">{</span>dsfont<span class="nb">}</span>
+/usepackage<span class="nb">{</span>setspace<span class="nb">}</span>
+/usepackage<span class="nb">{</span>tipa<span class="nb">}</span>
+/usepackage<span class="nb">{</span>relsize<span class="nb">}</span>
+/usepackage<span class="nb">{</span>textcomp<span class="nb">}</span>
+/usepackage<span class="nb">{</span>mathrsfs<span class="nb">}</span>
+/usepackage<span class="nb">{</span>wasysym<span class="nb">}</span>
+/usepackage<span class="nb">{</span>ragged2e<span class="nb">}</span>
+/usepackage<span class="nb">{</span>physics<span class="nb">}</span>
+/usepackage<span class="nb">{</span>listings<span class="nb">}</span>
+/usepackage<span class="nb">{</span>xcolor<span class="nb">}</span>
+<span class="c">% /usepackage{microtype}</span>
+
+<span class="hll"><span class="c">%% 字体设置</span>
+</span><span class="hll">/usepackage[T1,OT1]<span class="nb">{</span>fontenc<span class="nb">}</span>
+</span><span class="hll">/usepackage<span class="nb">{</span>palatino<span class="nb">}</span>  <span class="c">% english defalut font</span>
+</span><span class="hll">/usepackage<span class="nb">{</span>calligra<span class="nb">}</span>  <span class="c">% hand-writing /calligra</span>
+</span><span class="hll">/newcommand<span class="nb">{</span>/sz<span class="nb">}</span>[1]<span class="nb">{</span>/fontencoding<span class="nb">{</span>OT1<span class="nb">}</span>/fontfamily<span class="nb">{</span>pplj<span class="nb">}</span>/fontseries<span class="nb">{</span>m<span class="nb">}</span>/selectfont #1<span class="nb">}</span>   <span class="c">% non-aligned number</span>
+</span><span class="hll">/newcommand<span class="nb">{</span>/gt<span class="nb">}</span>[1]<span class="nb">{</span>/fontencoding<span class="nb">{</span>OT1<span class="nb">}</span>/fontfamily<span class="nb">{</span>pgoth<span class="nb">}</span>/fontseries<span class="nb">{</span>m<span class="nb">}</span>/selectfont #1<span class="nb">}</span>  <span class="c">% Gothic font</span>
+</span><span class="hll">
+</span><span class="hll"><span class="c">%% xelatex font</span>
+</span><span class="hll">/usepackage<span class="nb">{</span>fontspec<span class="nb">}</span>
+</span><span class="hll">/usepackage<span class="nb">{</span>xeCJK<span class="nb">}</span>
+</span><span class="hll">/setCJKmainfont[BoldFont=<span class="nb">{</span>Noto Sans S Chinese<span class="nb">}</span>]<span class="nb">{</span>Noto Serif CJK SC<span class="nb">}</span>
+</span><span class="hll">/setCJKmonofont<span class="nb">{</span>Noto Serif CJK SC<span class="nb">}</span>
+</span><span class="hll">/setCJKsansfont<span class="nb">{</span>Noto Serif CJK SC SemiBold<span class="nb">}</span>  <span class="c">% /sf Chinese title font</span>
+</span><span class="hll">/setmainfont<span class="nb">{</span>Palatino-Roman<span class="nb">}</span>    <span class="c">% /sf English hand-writing font</span>
+</span><span class="hll">/setsansfont<span class="nb">{</span>Zapfino<span class="nb">}</span>
+</span>
+<span class="hll"><span class="c">%% 绘图工具</span>
+</span><span class="hll">/usepackage[siunitx,RPvoltages,european]<span class="nb">{</span>circuitikz<span class="nb">}</span>
+</span><span class="hll">/usepackage<span class="nb">{</span>tikz<span class="nb">}</span>
+</span>
+<span class="c">% /DisableLigatures{encoding = *, family = * }</span>
+
+/linespread<span class="nb">{</span>1<span class="nb">}</span>
+
+/begin<span class="nb">{</span>document<span class="nb">}</span>
+
+YourTextHere
+
+/end<span class="nb">{</span>document<span class="nb">}</span>
+</pre></div>
+</td></tr></table></div>
+<p><strong>字体设置</strong> :这里可以自定义字体,不详细展开.</p>
+<p><strong>绘图工具</strong> :如果要使Tikz或者CircuiTikz的绘图正确显示,需要更改绘图的填充,否则不能在manim编译的动画中正确显示,因为manim会自动滤除颜色.对于一些LaTex自带的符号也是如此!如果你发现LaTex编译没有问题,那很大程度上的问题就是填充透明度等有问题.</p>
+<p>有兴趣的可以尝试一下:</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>需要在英文模式下,也就是 <code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX=False</span></code> 的情况下编译!因为中文情况下的处理会出现问题!</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TikzMobject</span><span class="p">(</span><span class="n">TextMobject</span><span class="p">):</span>
+    <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;stroke_width&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;fill_opacity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;stroke_opacity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="p">}</span>
+
+
+<span class="k">class</span> <span class="nc">ExampleTikz</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">circuit</span> <span class="o">=</span> <span class="n">TikzMobject</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            /begin</span><span class="si">{circuitikz}</span><span class="s2">[american voltages]</span>
+<span class="s2">            /draw</span>
+<span class="s2">            (0,0) to [short, *-] (6,0)</span>
+<span class="s2">            to [V, l_=$/mathrm</span><span class="si">{j}</span><span class="s2">{/omega}_m /underline{/psi}^s_R$] (6,2)</span>
+<span class="s2">            to [R, l_=$R_R$] (6,4)</span>
+<span class="s2">            to [short, i_=$/underline</span><span class="si">{i}</span><span class="s2">^s_R$] (5,4)</span>
+<span class="s2">            (0,0) to [open,v^&gt;=$/underline</span><span class="si">{u}</span><span class="s2">^s_s$] (0,4)</span>
+<span class="s2">            to [short, *- ,i=$/underline</span><span class="si">{i}</span><span class="s2">^s_s$] (1,4)</span>
+<span class="s2">            to [R, l=$R_s$] (3,4)</span>
+<span class="s2">            to [L, l=$L_{/sigma}$] (5,4)</span>
+<span class="s2">            to [short, i_=$/underline</span><span class="si">{i}</span><span class="s2">^s_M$] (5,3)</span>
+<span class="s2">            to [L, l_=$L_M$] (5,0);</span>
+<span class="s2">            /end</span><span class="si">{circuitikz}</span><span class="s2"></span>
+<span class="s2">            &quot;&quot;&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">play</span><span class="p">(</span><span class="n">Write</span><span class="p">(</span><span class="n">circuit</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wait</span><span class="p">()</span>
+</pre></div>
+</div>
+<img alt="../_images/ExampleTikz.gif" src="../_images/ExampleTikz.gif" />
+</div>
+<div class="section" id="id2">
+<h2>中文支持问题<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>首先要确保你的LaTex能够正常编译!在 <code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code> 找到 <code class="docutils literal notranslate"><span class="pre">TEX_USE_CTEX</span></code> 设置为 <code class="docutils literal notranslate"><span class="pre">True</span></code>.</p>
+<p>如果你的LaTex在英文模式下能够正常编译的话,这里应该问题就不大了.如果出现 <code class="docutils literal notranslate"><span class="pre">xeLatex</span> <span class="pre">error</span> <span class="pre">converting</span> <span class="pre">to</span> <span class="pre">dvi</span></code> 报错,很大程度上还是宏包问题.这里中文使用的是 <code class="docutils literal notranslate"><span class="pre">ctex</span></code> 宏包,要注意有没有安装.</p>
+<p>LaTex实在有很多可以讲的,这一块都能单独写好几本书了,我们放到后面.网上有很多资料和书籍,需要大家多多学习和折腾!</p>
+</div>
+<div class="section" id="id3">
+<h2>字体问题<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>如果你不想通过改变LaTex模板来设置字体,你可以参考 <cite>xy-23</cite> 编写的一个新的 <a class="reference external" href="https://github.com/3b1b/manim/pull/680">类</a>.</p>
+<p>但有个问题是输出的图片并非矢量,所以效果会差一点.</p>
+</div>
+<div class="section" id="id5">
+<h2>编译过慢问题<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<p>Manim编译有时候会很慢,如果你的电脑上有GPU的话,那恭喜你!你可用GPU来加速!在你的文件中添加如下代码:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">set_gpus</span><span class="p">(</span><span class="n">gpu_index</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">gpu_index</span><span class="p">)</span> <span class="o">==</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="n">gpu_index</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">_</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">gpu_index</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">gpu_index</span><span class="p">)</span> <span class="o">==</span><span class="nb">int</span><span class="p">:</span>
+        <span class="n">gpu_index</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">gpu_index</span><span class="p">)</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">&quot;CUDA_VISIBLE_DEVICES&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gpu_index</span>
+</pre></div>
+</div>
+<p>然后在你的动画类的 <code class="docutils literal notranslate"><span class="pre">def</span> <span class="pre">construct(self):</span></code> 下面写一行代码: <code class="docutils literal notranslate"><span class="pre">set_gpus(0)</span></code> 或者 <code class="docutils literal notranslate"><span class="pre">set_gpus([0,1])</span></code> 如果你是土豪有两块GPU的话!</p>
+<p>有了GPU的加持,你会体验到编译速度的飞跃,但对于大规模的计算场景,如多个对象淡出、Update动画等,速度会回归龟速.</p>
+</div>
+<div class="section" id="id6">
+<h2>编译动态条问题<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<p>如果你不喜欢编译时的动态条,可以参考 <a class="reference external" href="https://www.youtube.com/watch?v=K8dVFqXR2JM">Manim tutorial | Settings - Leave the progress bars by default</a> 去除.</p>
+<p># TODO:完善细节.</p>
+</div>
+<div class="section" id="id7">
+<h2>如何改变视频输出地址<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<p>个人不建议更改!默认就好,方便管理. 如果要更改,可以参考 <a class="reference external" href="https://www.youtube.com/watch?v=I9rHHiKqTWY">Manim tutorial | Settings - Change media directory</a> 设置.</p>
+<p># TODO:完善细节.</p>
+</div>
+<div class="section" id="id8">
+<h2>如何在终端中设置输出的帧率<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<p>参考 <a class="reference external" href="https://www.youtube.com/watch?v=cyIz0Oh3lWY">Manim tutorial | Settings - Render faster, set FPS via terminal</a> 进行设置.</p>
+<p># TODO:完善细节.</p>
+</div>
+<div class="section" id="svg">
+<h2>添加声音、SVG和图像<a class="headerlink" href="#svg" title="永久链接至标题">¶</a></h2>
+<p>参考 <a class="reference external" href="https://www.youtube.com/watch?v=tsMGRN3ZfAg">Manim tutorial | 7 - Add sounds, svgs and images</a> 进行设置.</p>
+<div class="section" id="id9">
+<h3>添加声音<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h3>
+<p># TODO: 完善细节</p>
+</div>
+<div class="section" id="id10">
+<h3>添加SVG<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h3>
+<p># TODO: 完善细节</p>
+</div>
+<div class="section" id="id11">
+<h3>添加图像<a class="headerlink" href="#id11" title="永久链接至标题">¶</a></h3>
+<p># TODO: 完善细节</p>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>如何改变背景颜色 <a class="footnote-reference brackets" href="#id18" id="id12">1</a><a class="headerlink" href="#id13" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChangeBackgroundColor</span><span class="p">(</span><span class="n">Scene</span><span class="p">):</span>
+    <span class="n">CONFIG</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;camera_config&quot;</span><span class="p">:{</span><span class="s2">&quot;background_color&quot;</span><span class="p">:</span><span class="n">RED</span><span class="p">},</span> <span class="c1"># 改变背景色</span>
+        <span class="s2">&quot;text&quot;</span><span class="p">:</span><span class="n">TexMobject</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;/frac</span><span class="si">{d}{dx}</span><span class="s2">/Bigr|_{y=2}&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">def</span> <span class="nf">construct</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<img alt="../_images/ChangeBackgroundColor.png" src="../_images/ChangeBackgroundColor.png" />
+</div>
+<div class="section" id="id15">
+<h2>如何去除字符的描边 <a class="footnote-reference brackets" href="#id18" id="id14">1</a><a class="headerlink" href="#id15" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">RemoveBackgroundStrokeWidth</span><span class="p">(</span><span class="n">ChangeBackgroundColor</span><span class="p">):</span>
+    <span class="n">CONFIG</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;text&quot;</span><span class="p">:</span><span class="n">TexMobject</span><span class="p">(</span>
+            <span class="sa">r</span><span class="s2">&quot;/frac</span><span class="si">{d}{dx}</span><span class="s2">/Bigr|_{y=2}&quot;</span><span class="p">,</span>
+            <span class="n">background_stroke_width</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="c1"># 设置描边粗细</span>
+            <span class="p">)</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></div>
+</div>
+<img alt="../_images/RemoveBackgroundStrokeWidth.png" src="../_images/RemoveBackgroundStrokeWidth.png" />
+</div>
+<div class="section" id="gif">
+<h2>gif输出问题<a class="headerlink" href="#gif" title="永久链接至标题">¶</a></h2>
+<p>manimlib中的gif输出是没有问题的,但最新的manim repo进行更新后没有办法正确输出gif(至少我是这样的),如果你也遇到相同的情况,只需要把相关的设置改回去就可以了.</p>
+<p>你需要安装manimlib这个包,找到 <code class="docutils literal notranslate"><span class="pre">manimlib/config.py</span></code> 跟克隆下来的manim仓库中的 <code class="docutils literal notranslate"><span class="pre">manimlib/config.py</span></code> 进行比对,参照 <a class="reference external" href="https://github.com/3b1b/manim/pull/529/files">更新</a> 进行更改.</p>
+<p>你可以直接在我的Repo上下载这个 <a class="reference external" href="https://github.com/WRangers/manim/blob/master/manimlib/config.py">文件</a> 进行替换.</p>
+<dl class="footnote brackets">
+<dt class="label" id="id18"><span class="brackets">1</span><span class="fn-backref">(<a href="#id12">1</a>,<a href="#id14">2</a>)</span></dt>
+<dd><p><a class="reference external" href="https://github.com/Elteoremadebeethoven/AnimationsWithManim/blob/master/English/extra/faqs/faqs.md">AnimationsWithManim/English/extra/faqs/faqs.md</a></p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="vscode.html" class="btn btn-neutral float-right" title="VS Code配置" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../1_installation/macos.html" class="btn btn-neutral float-left" title="Mac OS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, 7thD
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

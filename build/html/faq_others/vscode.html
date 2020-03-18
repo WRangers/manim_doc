@@ -1,0 +1,480 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>VS Code配置 &mdash; Manim Chinese Doc 0.01 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Hello World" href="../2_getst/hw.html" />
+    <link rel="prev" title="FAQ" href="faq.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Manim Chinese Doc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../1_installation/win.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_installation/linux.html">GNU/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1_installation/macos.html">Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ and Others</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VS Code配置</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tasks-json">配置tasks.json</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#compile-shell-py">配置compile_shell.py</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">用法</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../2_getst/hw.html">Hello World</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2_getst/compile.html">编译选项</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../3_reference/structure/file.html">Manimlib架构</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_reference/structure/constants.html">基本参数</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3_reference/mobject/mobject.html">Mobject</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Manim Chinese Doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>VS Code配置</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/faq_others/vscode.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vs-code">
+<h1>VS Code配置<a class="headerlink" href="#vs-code" title="永久链接至标题">¶</a></h1>
+<p>此节基于Bilibili Up主 <cite>pdcxs</cite> 的文章: <a class="reference external" href="https://www.bilibili.com/read/cv4152112">配置Manim自动编译环境(仅限VS Code Win)</a> 进行改进.</p>
+<p>如果你使用的是Visual Studio Code的话,可以配置自动编译,而不需要每一次手动输入 <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">manim.py</span> <span class="pre">example_scenes.py</span> <span class="pre">SquareToCircle</span> <span class="pre">-pl</span></code> 这样一长串的代码.</p>
+<div class="section" id="tasks-json">
+<h2>配置tasks.json<a class="headerlink" href="#tasks-json" title="永久链接至标题">¶</a></h2>
+<p>在工作目录下的 <code class="docutils literal notranslate"><span class="pre">.vscode</span></code> 中(如果没有就创建一个)创建一个 <code class="docutils literal notranslate"><span class="pre">tasks.json</span></code> 文件(如果已经有了,直接修改即可).</p>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;2.0.0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tasks&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+<span class="hll">            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;l&quot;</span><span class="p">,</span>
+</span>            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;shell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$</span><span class="si">{workspaceFolder}</span><span class="se">\\</span><span class="s2">compile_shell.py&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{relativeFile}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{lineNumber}</span><span class="s2">&quot;</span><span class="p">,</span>
+<span class="hll">                <span class="s2">&quot;-pl&quot;</span>
+</span>            <span class="p">],</span>
+            <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;isDefault&quot;</span><span class="p">:</span> <span class="n">true</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;best&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;shell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$</span><span class="si">{workspaceFolder}</span><span class="se">\\</span><span class="s2">compile_shell.py&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{relativeFile}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{lineNumber}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-p&quot;</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;isDefault&quot;</span><span class="p">:</span> <span class="n">true</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;m&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;shell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$</span><span class="si">{workspaceFolder}</span><span class="se">\\</span><span class="s2">compile_shell.py&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{relativeFile}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{lineNumber}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-pm&quot;</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;isDefault&quot;</span><span class="p">:</span> <span class="n">true</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;s&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;shell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$</span><span class="si">{workspaceFolder}</span><span class="se">\\</span><span class="s2">compile_shell.py&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{relativeFile}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{lineNumber}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-s&quot;</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;isDefault&quot;</span><span class="p">:</span> <span class="n">true</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;i&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;shell&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;command&quot;</span><span class="p">:</span> <span class="s2">&quot;python&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="s2">&quot;$</span><span class="si">{workspaceFolder}</span><span class="se">\\</span><span class="s2">compile_shell.py&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{relativeFile}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;$</span><span class="si">{lineNumber}</span><span class="s2">&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;-il&quot;</span>
+            <span class="p">],</span>
+            <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s2">&quot;kind&quot;</span><span class="p">:</span> <span class="s2">&quot;build&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;isDefault&quot;</span><span class="p">:</span> <span class="n">true</span>
+            <span class="p">},</span>
+            <span class="s2">&quot;problemMatcher&quot;</span><span class="p">:</span> <span class="p">[]</span>
+        <span class="p">},</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+<p>每一个任务都有一个标签(可以自定义修改),与其任务的输出格式是相对应的;如第 <code class="docutils literal notranslate"><span class="pre">5</span></code> 行的 <code class="docutils literal notranslate"><span class="pre">l</span></code> 代表的是低分辨率输出,相应的 第 <code class="docutils literal notranslate"><span class="pre">12</span></code> 行 <code class="docutils literal notranslate"><span class="pre">-pl</span></code> 代表低分辨率渲染,并用默认播放器打开;其他任务同理.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span></code> :低分辨渲染</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">m</span></code> :中分辨渲染</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">b</span></code> :最高分辨渲染,输出品质</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code> :输出gif格式</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">s</span></code> :低分辨率保存最后一帧</p></li>
+</ul>
+<p>可以自定义添加更多的指令.渲染指令请参考渲染设置.</p>
+</div>
+<div class="section" id="compile-shell-py">
+<h2>配置compile_shell.py<a class="headerlink" href="#compile-shell-py" title="永久链接至标题">¶</a></h2>
+<p>在主工作目录下,添加 <code class="docutils literal notranslate"><span class="pre">compile_shell.py</span></code> 文件.这个文件是用于寻找当前要编译的动画类的名称.</p>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">linecache</span>
+
+<span class="n">file_relative_dir</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">linenumber</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">setting</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="k">while</span> <span class="n">linenumber</span><span class="p">:</span>
+    <span class="n">text</span><span class="o">=</span><span class="n">linecache</span><span class="o">.</span><span class="n">getline</span><span class="p">(</span><span class="n">file_relative_dir</span><span class="p">,</span><span class="n">linenumber</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">&#39;class&#39;</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+        <span class="n">escape_index</span><span class="o">=</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>
+        <span class="n">brackets_index</span><span class="o">=</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;(&#39;</span><span class="p">)</span>
+        <span class="n">class_name</span><span class="o">=</span><span class="n">text</span><span class="p">[</span><span class="n">escape_index</span><span class="p">:</span><span class="n">brackets_index</span><span class="p">]</span>
+        <span class="n">linecache</span><span class="o">.</span><span class="n">clearcache</span><span class="p">()</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">linenumber</span><span class="o">-=</span><span class="mi">1</span>
+
+<span class="n">commands</span><span class="o">=</span><span class="p">[</span>
+<span class="hll">    <span class="s1">&#39;D:\Anaconda3\python.exe&#39;</span><span class="p">,</span>  <span class="c1"># my anaconda dir -&gt; to replace it with yours</span>
+</span>    <span class="s1">&#39;manim.py&#39;</span><span class="p">,</span>
+    <span class="n">file_relative_dir</span><span class="p">,</span>
+    <span class="n">class_name</span><span class="p">,</span>
+    <span class="n">setting</span>
+<span class="p">]</span>
+<span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">commands</span><span class="p">))</span>
+</pre></div>
+</td></tr></table></div>
+<p>第 <code class="docutils literal notranslate"><span class="pre">20-26</span></code> 行是编译的命令,第 <code class="docutils literal notranslate"><span class="pre">21</span></code> 行是指定的编译器,由于我的电脑同时安装了Anaconda和Python,为了避免冲突,这里可以自行指定编译器;你需要自行替换一下.如果选择使用默认的Python,把第 <code class="docutils literal notranslate"><span class="pre">21</span></code> 行改为 <code class="docutils literal notranslate"><span class="pre">python</span></code> 即可.</p>
+<p>这里的机制是在你的鼠标所在行向上搜索类的名称,然后放入命令行进行自动编译.原参考的解决方案是使用Poweshell,这对于非Windows平台是不支持的,这里改成Python脚本.理论上来说,只要能装上VS Code,都能实现这样的自动编译.</p>
+</div>
+<div class="section" id="id1">
+<h2>用法<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>鼠标放在要编译的manim动画代码中的任意一行,按下默认快捷键是 <code class="docutils literal notranslate"><span class="pre">Ctrl+Shift+B</span></code> ,会出现窗口:</p>
+<img alt="../_images/2020-03-14-09-46-21.png" class="align-center" src="../_images/2020-03-14-09-46-21.png" />
+<p>通过鼠标或者键盘选择相应的任务即可.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../2_getst/hw.html" class="btn btn-neutral float-right" title="Hello World" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="faq.html" class="btn btn-neutral float-left" title="FAQ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, 7thD
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
