@@ -1,0 +1,51 @@
+\documentclass[preview]{standalone}
+
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{dsfont}
+\usepackage{setspace}
+\usepackage{tipa}
+\usepackage{relsize}
+\usepackage{textcomp}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{ragged2e}
+\usepackage{physics}
+\usepackage{listings}
+\usepackage{xcolor}
+% \usepackage{microtype}
+
+%% font
+% \usepackage{mathpazo}
+% \usepackage{mathptmx} 
+% \usepackage{times}
+% \usepackage{chancery}
+% \usepackage{tgchorus}
+\usepackage[T1,OT1]{fontenc}
+\usepackage{palatino}  % english defalut font
+\usepackage{calligra}  % hand-writing \calligra
+\newcommand{\sz}[1]{\fontencoding{OT1}\fontfamily{pplj}\fontseries{m}\selectfont #1}   % non-aligned number
+\newcommand{\gt}[1]{\fontencoding{OT1}\fontfamily{pgoth}\fontseries{m}\selectfont #1}  % Gothic font
+
+%% xelatex font
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont[BoldFont={Noto Sans S Chinese}]{Noto Serif CJK SC}
+\setCJKmonofont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Serif CJK SC SemiBold}  % \sf Chinese title font
+\setmainfont{Palatino-Roman}    % \sf English hand-writing font
+\setsansfont{Zapfino}
+
+\usepackage[siunitx,RPvoltages,european]{circuitikz}
+\usepackage{tikz}
+
+% \DisableLigatures{encoding = *, family = * }
+
+\linespread{1}
+
+\begin{document}
+
+YourTextHere
+
+\end{document}
