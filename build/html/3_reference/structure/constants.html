@@ -1,0 +1,792 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>基本参数 &mdash; Manim Chinese Doc 0.01 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Mobject" href="../mobject/mobject.html" />
+    <link rel="prev" title="Manimlib架构" href="file.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Manim Chinese Doc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../1_installation/win.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../1_installation/linux.html">GNU/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../1_installation/macos.html">Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ and Others</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../faq_others/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../faq_others/vscode.html">VS Code配置</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_getst/hw.html">Hello World</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_getst/compile.html">编译选项</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="file.html">Manimlib架构</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">基本参数</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text">Text设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latex">LaTex编译设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">帮助与报错信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">分辨率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">画面尺寸</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">间距</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">时间</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">向量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">角度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">颜色</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mobject/mobject.html">Mobject</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Manim Chinese Doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>基本参数</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/3_reference/structure/constants.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>基本参数<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本节主要参考 <a class="reference external" href="https://manim-tb-manual.000webhostapp.com/tree/constants.html">Constants</a>.</p>
+<div class="section" id="id2">
+<h2>路径<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>当你第一次运行动画编译的时候,终端会出现这样的提示:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Media</span> <span class="n">will</span> <span class="n">be</span> <span class="n">stored</span> <span class="ow">in</span> <span class="n">media</span><span class="o">/.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">change</span> <span class="n">this</span> <span class="n">behavior</span> <span class="n">by</span> <span class="n">writing</span> <span class="n">a</span> <span class="n">different</span> <span class="n">directory</span> <span class="n">to</span> <span class="n">media_dir</span><span class="o">.</span><span class="n">txt</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>这是因为动画文件会被存放在在 <code class="docutils literal notranslate"><span class="pre">media</span></code> 路径中,在你终端运行的主目录下,会出现新的文件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
+├── manim.py
+├── stage_scenes.py
+├── media                  # &lt;- 新目录
+└── manimlib
+    └── media_dir.txt      # &lt;- 新文件
+    └── scene
+        └── media_dir.txt  # &lt;- 新文件
+</pre></div>
+</div>
+<p>如果你不更改媒体路径的话,后面不会再出现这个提示.可以通过更改 <code class="docutils literal notranslate"><span class="pre">media_dir.txt</span></code> 来更改媒体保存路径,这会导致  <code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code> 第 <code class="docutils literal notranslate"><span class="pre">14</span></code> 行的改变.</p>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">MEDIA_DIR</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">VIDEO_DIR</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">VIDEO_OUTPUT_DIR</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">TEX_DIR</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">TEXT_DIR</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+
+<span class="k">def</span> <span class="nf">initialize_directories</span><span class="p">(</span><span class="n">config</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">MEDIA_DIR</span>
+    <span class="k">global</span> <span class="n">VIDEO_DIR</span>
+<span class="hll">    <span class="k">global</span> <span class="n">VIDEO_OUTPUT_DIR</span>
+</span>    <span class="k">global</span> <span class="n">TEX_DIR</span>
+    <span class="k">global</span> <span class="n">TEXT_DIR</span>
+
+    <span class="n">video_path_specified</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;video_dir&quot;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;video_output_dir&quot;</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">video_path_specified</span> <span class="ow">and</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;tex_dir&quot;</span><span class="p">]):</span>
+        <span class="k">if</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;media_dir&quot;</span><span class="p">]:</span>
+            <span class="n">MEDIA_DIR</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;media_dir&quot;</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">MEDIA_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s1">&#39;~&#39;</span><span class="p">),</span>
+                <span class="s2">&quot;Dropbox (3Blue1Brown)/3Blue1Brown Team Folder&quot;</span>
+            <span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">MEDIA_DIR</span><span class="p">):</span>
+            <span class="n">MEDIA_DIR</span> <span class="o">=</span> <span class="s2">&quot;./media&quot;</span>
+        <span class="nb">print</span><span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;Media will be written to {MEDIA_DIR + os.sep}. You can change &quot;</span>
+            <span class="s2">&quot;this behavior with the --media_dir flag.&quot;</span>
+        <span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;media_dir&quot;</span><span class="p">]:</span>
+            <span class="nb">print</span><span class="p">(</span>
+                <span class="s2">&quot;Ignoring --media_dir, since both --tex_dir and a video &quot;</span>
+                <span class="s2">&quot;directory were both passed&quot;</span>
+            <span class="p">)</span>
+
+    <span class="n">TEX_DIR</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;tex_dir&quot;</span><span class="p">]</span> <span class="ow">or</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">MEDIA_DIR</span><span class="p">,</span> <span class="s2">&quot;Tex&quot;</span><span class="p">)</span>
+    <span class="n">TEXT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">MEDIA_DIR</span><span class="p">,</span> <span class="s2">&quot;texts&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">video_path_specified</span><span class="p">:</span>
+        <span class="n">VIDEO_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">MEDIA_DIR</span><span class="p">,</span> <span class="s2">&quot;videos&quot;</span><span class="p">)</span>
+        <span class="n">VIDEO_OUTPUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">MEDIA_DIR</span><span class="p">,</span> <span class="s2">&quot;videos&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;video_output_dir&quot;</span><span class="p">]:</span>
+        <span class="n">VIDEO_OUTPUT_DIR</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;video_output_dir&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">VIDEO_DIR</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;video_dir&quot;</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">folder</span> <span class="ow">in</span> <span class="p">[</span><span class="n">VIDEO_DIR</span><span class="p">,</span> <span class="n">VIDEO_OUTPUT_DIR</span><span class="p">,</span> <span class="n">TEX_DIR</span><span class="p">,</span> <span class="n">TEXT_DIR</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="n">folder</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">folder</span><span class="p">):</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">folder</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>更多细节请参考 <a class="reference external" href="如何改变视频输出地址">FAQ 2.7</a>.</p>
+</div>
+<div class="section" id="text">
+<h2>Text设置<a class="headerlink" href="#text" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Text</span></code> 类的设置.</p>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">NOT_SETTING_FONT_MSG</span><span class="o">=</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">Warning:</span>
+<span class="s1">You haven&#39;t set font.</span>
+<span class="s1">If you are not using English, this may cause text rendering problem.</span>
+<span class="s1">You set font like:</span>
+<span class="s1">text = Text(&#39;your text&#39;, font=&#39;your font&#39;)</span>
+<span class="s1">or:</span>
+<span class="s1">class MyText(Text):</span>
+<span class="s1">    CONFIG = {</span>
+<span class="s1">        &#39;font&#39;: &#39;My Font&#39;</span>
+<span class="s1">    }</span>
+<span class="s1">&#39;&#39;&#39;</span>
+<span class="n">START_X</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">START_Y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">NORMAL</span> <span class="o">=</span> <span class="s1">&#39;NORMAL&#39;</span>
+<span class="n">ITALIC</span> <span class="o">=</span> <span class="s1">&#39;ITALIC&#39;</span>
+<span class="n">OBLIQUE</span> <span class="o">=</span> <span class="s1">&#39;OBLIQUE&#39;</span>
+<span class="n">BOLD</span> <span class="o">=</span> <span class="s1">&#39;BOLD&#39;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="latex">
+<h2>LaTex编译设置<a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">TEX_USE_CTEX</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">TEX_TEXT_TO_REPLACE</span> <span class="o">=</span> <span class="s2">&quot;YourTextHere&quot;</span>
+<span class="n">TEMPLATE_TEX_FILE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">)),</span>
+    <span class="s2">&quot;tex_template.tex&quot;</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">TEX_USE_CTEX</span> <span class="k">else</span> <span class="s2">&quot;ctex_template.tex&quot;</span>
+<span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">TEMPLATE_TEX_FILE</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+    <span class="n">TEMPLATE_TEXT_FILE_BODY</span> <span class="o">=</span> <span class="n">infile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">TEMPLATE_TEX_FILE_BODY</span> <span class="o">=</span> <span class="n">TEMPLATE_TEXT_FILE_BODY</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span>
+        <span class="n">TEX_TEXT_TO_REPLACE</span><span class="p">,</span>
+        <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">begin{align*}</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">TEX_TEXT_TO_REPLACE</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\\</span><span class="s2">end{align*}&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id3">
+<h2>帮助与报错信息<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">HELP_MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">   Usage:</span>
+<span class="s2">   python extract_scene.py &lt;module&gt; [&lt;scene name&gt;]</span>
+<span class="s2">   -p preview in low quality</span>
+<span class="s2">   -s show and save picture of last frame</span>
+<span class="s2">   -w write result to file [this is default if nothing else is stated]</span>
+<span class="s2">   -o &lt;file_name&gt; write to a different file_name</span>
+<span class="s2">   -l use low quality</span>
+<span class="s2">   -m use medium quality</span>
+<span class="s2">   -a run and save every scene in the script, or all args for the given scene</span>
+<span class="s2">   -q don&#39;t print progress</span>
+<span class="s2">   -f when writing to a movie file, export the frames in png sequence</span>
+<span class="s2">   -t use transperency when exporting images</span>
+<span class="s2">   -n specify the number of the animation to start from</span>
+<span class="s2">   -r specify a resolution</span>
+<span class="s2">   -c specify a background color</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">SCENE_NOT_FOUND_MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">   </span><span class="si">{}</span><span class="s2"> is not in the script</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">CHOOSE_NUMBER_MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">Choose number corresponding to desired scene/arguments.</span>
+<span class="s2">(Use comma separated list for multiple entries)</span>
+<span class="s2">Choice(s): &quot;&quot;&quot;</span>
+<span class="n">INVALID_NUMBER_MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;Fine then, if you don&#39;t want to give a valid number I&#39;ll just quit&quot;</span>
+
+<span class="n">NO_SCENE_MESSAGE</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">   There are no scenes inside that module</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id4">
+<h2>分辨率<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># There might be other configuration than pixel shape later...</span>
+<span class="n">PRODUCTION_QUALITY_CAMERA_CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pixel_height&quot;</span><span class="p">:</span> <span class="mi">1440</span><span class="p">,</span>
+    <span class="s2">&quot;pixel_width&quot;</span><span class="p">:</span> <span class="mi">2560</span><span class="p">,</span>
+    <span class="s2">&quot;frame_rate&quot;</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">HIGH_QUALITY_CAMERA_CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pixel_height&quot;</span><span class="p">:</span> <span class="mi">1080</span><span class="p">,</span>
+    <span class="s2">&quot;pixel_width&quot;</span><span class="p">:</span> <span class="mi">1920</span><span class="p">,</span>
+    <span class="s2">&quot;frame_rate&quot;</span><span class="p">:</span> <span class="mi">60</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">MEDIUM_QUALITY_CAMERA_CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pixel_height&quot;</span><span class="p">:</span> <span class="mi">720</span><span class="p">,</span>
+    <span class="s2">&quot;pixel_width&quot;</span><span class="p">:</span> <span class="mi">1280</span><span class="p">,</span>
+    <span class="s2">&quot;frame_rate&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">LOW_QUALITY_CAMERA_CONFIG</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;pixel_height&quot;</span><span class="p">:</span> <span class="mi">480</span><span class="p">,</span>
+    <span class="s2">&quot;pixel_width&quot;</span><span class="p">:</span> <span class="mi">854</span><span class="p">,</span>
+    <span class="s2">&quot;frame_rate&quot;</span><span class="p">:</span> <span class="mi">15</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id5">
+<h2>画面尺寸<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">DEFAULT_PIXEL_HEIGHT</span> <span class="o">=</span> <span class="n">PRODUCTION_QUALITY_CAMERA_CONFIG</span><span class="p">[</span><span class="s2">&quot;pixel_height&quot;</span><span class="p">]</span>
+<span class="n">DEFAULT_PIXEL_WIDTH</span> <span class="o">=</span> <span class="n">PRODUCTION_QUALITY_CAMERA_CONFIG</span><span class="p">[</span><span class="s2">&quot;pixel_width&quot;</span><span class="p">]</span>
+<span class="n">DEFAULT_FRAME_RATE</span> <span class="o">=</span> <span class="mi">60</span>
+
+<span class="n">DEFAULT_POINT_DENSITY_2D</span> <span class="o">=</span> <span class="mi">25</span>
+<span class="n">DEFAULT_POINT_DENSITY_1D</span> <span class="o">=</span> <span class="mi">250</span>
+
+<span class="n">DEFAULT_STROKE_WIDTH</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">FRAME_HEIGHT</span> <span class="o">=</span> <span class="mf">8.0</span>
+<span class="n">FRAME_WIDTH</span> <span class="o">=</span> <span class="n">FRAME_HEIGHT</span> <span class="o">*</span> <span class="n">DEFAULT_PIXEL_WIDTH</span> <span class="o">/</span> <span class="n">DEFAULT_PIXEL_HEIGHT</span>
+<span class="n">FRAME_Y_RADIUS</span> <span class="o">=</span> <span class="n">FRAME_HEIGHT</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">FRAME_X_RADIUS</span> <span class="o">=</span> <span class="n">FRAME_WIDTH</span> <span class="o">/</span> <span class="mi">2</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id6">
+<h2>间距<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>156
+157
+158
+159
+160
+161
+162</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">SMALL_BUFF</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">MED_SMALL_BUFF</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">MED_LARGE_BUFF</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">LARGE_BUFF</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">DEFAULT_MOBJECT_TO_EDGE_BUFFER</span> <span class="o">=</span> <span class="n">MED_LARGE_BUFF</span>
+<span class="n">DEFAULT_MOBJECT_TO_MOBJECT_BUFFER</span> <span class="o">=</span> <span class="n">MED_SMALL_BUFF</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id7">
+<h2>时间<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>165
+166
+167</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># All in seconds</span>
+<span class="n">DEFAULT_POINTWISE_FUNCTION_RUN_TIME</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">DEFAULT_WAIT_TIME</span> <span class="o">=</span> <span class="mf">1.0</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id8">
+<h2>向量<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">ORIGIN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">UP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">DOWN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">RIGHT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">LEFT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">IN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">))</span>
+<span class="n">OUT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">))</span>
+<span class="n">X_AXIS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">Y_AXIS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">Z_AXIS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">))</span>
+
+<span class="c1"># Useful abbreviations for diagonals</span>
+<span class="n">UL</span> <span class="o">=</span> <span class="n">UP</span> <span class="o">+</span> <span class="n">LEFT</span>
+<span class="n">UR</span> <span class="o">=</span> <span class="n">UP</span> <span class="o">+</span> <span class="n">RIGHT</span>
+<span class="n">DL</span> <span class="o">=</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">LEFT</span>
+<span class="n">DR</span> <span class="o">=</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">RIGHT</span>
+
+<span class="n">TOP</span> <span class="o">=</span> <span class="n">FRAME_Y_RADIUS</span> <span class="o">*</span> <span class="n">UP</span>
+<span class="n">BOTTOM</span> <span class="o">=</span> <span class="n">FRAME_Y_RADIUS</span> <span class="o">*</span> <span class="n">DOWN</span>
+<span class="n">LEFT_SIDE</span> <span class="o">=</span> <span class="n">FRAME_X_RADIUS</span> <span class="o">*</span> <span class="n">LEFT</span>
+<span class="n">RIGHT_SIDE</span> <span class="o">=</span> <span class="n">FRAME_X_RADIUS</span> <span class="o">*</span> <span class="n">RIGHT</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id9">
+<h2>角度<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>192
+193
+194</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">TAU</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">PI</span>
+<span class="n">DEGREES</span> <span class="o">=</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">360</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="id10">
+<h2>颜色<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<a href="https://manim-tb-manual.000webhostapp.com/_static/colors/colors.html"> 颜色盘展示 </a><div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>默认 <code class="docutils literal notranslate"><span class="pre">COLOR</span> <span class="pre">=</span> <span class="pre">COLOR_C</span></code></p>
+</div>
+<div class="highlight-default notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Colors</span>
+<span class="n">COLOR_MAP</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;DARK_BLUE&quot;</span><span class="p">:</span> <span class="s2">&quot;#236B8E&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DARK_BROWN&quot;</span><span class="p">:</span> <span class="s2">&quot;#8B4513&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LIGHT_BROWN&quot;</span><span class="p">:</span> <span class="s2">&quot;#CD853F&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BLUE_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#1C758A&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BLUE_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#29ABCA&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BLUE_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#58C4DD&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BLUE_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#9CDCEB&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BLUE_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#C7E9F1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEAL_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#49A88F&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEAL_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#55C1A7&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEAL_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#5CD0B3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEAL_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#76DDC0&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;TEAL_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#ACEAD7&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREEN_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#699C52&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREEN_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#77B05D&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREEN_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#83C167&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREEN_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#A6CF8C&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREEN_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#C9E2AE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;YELLOW_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#E8C11C&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;YELLOW_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#F4D345&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;YELLOW_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#FFFF00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;YELLOW_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#FFEA94&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;YELLOW_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#FFF1B6&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GOLD_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#C78D46&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GOLD_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#E1A158&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GOLD_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#F0AC5F&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GOLD_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#F9B775&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GOLD_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#F7C797&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RED_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#CF5044&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RED_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#E65A4C&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RED_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#FC6255&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RED_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#FF8080&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;RED_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#F7A1A3&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;MAROON_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#94424F&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;MAROON_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#A24D61&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;MAROON_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#C55F73&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;MAROON_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#EC92AB&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;MAROON_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#ECABC1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PURPLE_E&quot;</span><span class="p">:</span> <span class="s2">&quot;#644172&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PURPLE_D&quot;</span><span class="p">:</span> <span class="s2">&quot;#715582&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PURPLE_C&quot;</span><span class="p">:</span> <span class="s2">&quot;#9A72AC&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PURPLE_B&quot;</span><span class="p">:</span> <span class="s2">&quot;#B189C6&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PURPLE_A&quot;</span><span class="p">:</span> <span class="s2">&quot;#CAA3E8&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;WHITE&quot;</span><span class="p">:</span> <span class="s2">&quot;#FFFFFF&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;BLACK&quot;</span><span class="p">:</span> <span class="s2">&quot;#000000&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LIGHT_GRAY&quot;</span><span class="p">:</span> <span class="s2">&quot;#BBBBBB&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LIGHT_GREY&quot;</span><span class="p">:</span> <span class="s2">&quot;#BBBBBB&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GRAY&quot;</span><span class="p">:</span> <span class="s2">&quot;#888888&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREY&quot;</span><span class="p">:</span> <span class="s2">&quot;#888888&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DARK_GREY&quot;</span><span class="p">:</span> <span class="s2">&quot;#444444&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DARK_GRAY&quot;</span><span class="p">:</span> <span class="s2">&quot;#444444&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DARKER_GREY&quot;</span><span class="p">:</span> <span class="s2">&quot;#222222&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DARKER_GRAY&quot;</span><span class="p">:</span> <span class="s2">&quot;#222222&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREY_BROWN&quot;</span><span class="p">:</span> <span class="s2">&quot;#736357&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;PINK&quot;</span><span class="p">:</span> <span class="s2">&quot;#D147BD&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LIGHT_PINK&quot;</span><span class="p">:</span> <span class="s2">&quot;#DC75CD&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;GREEN_SCREEN&quot;</span><span class="p">:</span> <span class="s2">&quot;#00FF00&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ORANGE&quot;</span><span class="p">:</span> <span class="s2">&quot;#FF862F&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+<span class="n">PALETTE</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">COLOR_MAP</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+<span class="nb">locals</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">COLOR_MAP</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="p">[</span><span class="n">s</span> <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="n">COLOR_MAP</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span> <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;_C&quot;</span><span class="p">)]:</span>
+    <span class="nb">locals</span><span class="p">()[</span><span class="n">name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_C&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)]</span> <span class="o">=</span> <span class="nb">locals</span><span class="p">()[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mobject/mobject.html" class="btn btn-neutral float-right" title="Mobject" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="file.html" class="btn btn-neutral float-left" title="Manimlib架构" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, 7thD
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
