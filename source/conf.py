@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.append(os.path.abspath('source'))
+sys.path.append(os.path.abspath('manimlib'))
 
 import sphinx_rtd_theme
 
@@ -34,7 +34,9 @@ release = '0.01'
 extensions = [
     "sphinx_rtd_theme",
     "sphinx.ext.autodoc",
+    "sphinx.ext.todo",
 ]
+todo_include_todos=True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

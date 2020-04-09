@@ -9,7 +9,7 @@ Welcome to Manim's documentation!
 .. image:: ../README.assets/logo_cut.png
 
 About
-=====
+======
 
 `Manim`_ 是Grant Sanderson (3Blue1Brown) 开发的Python库,旨在制作数学动画. Sanderson最早开发该库用于自己在可汗学院教授微积分等数学课程时使用,现在Manim仍是一个在发展中的项目!如果你看过3Blue1Brown频道的数学视频,一定领略到了Manim的强大,虽然还有很多不完善的地方,但瑕不掩瑜!
 
