@@ -35,6 +35,7 @@ extensions = [
     "sphinx_rtd_theme",
     "sphinx.ext.autodoc",
     "sphinx.ext.todo",
+    "sphinx.ext.githubpages",
 ]
 todo_include_todos=True
 

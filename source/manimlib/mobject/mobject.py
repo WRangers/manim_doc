@@ -22,14 +22,12 @@ from manimlib.utils.space_ops import angle_of_vector
 from manimlib.utils.space_ops import get_norm
 from manimlib.utils.space_ops import rotation_matrix
 
-sys.path.append('../..')
-sys.path.append('..')
 
 # TODO: Explain array_attrs
 
 class Mobject(Container):
     """
-    Mathematical Object
+    数学对象
     """
     CONFIG = {
         "color": WHITE,
