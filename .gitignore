@@ -1,5 +1,5 @@
-_build
-_static
-_templates
+source/_build
+source/_static
+source/_templates
 __pycache__
 .vscode
