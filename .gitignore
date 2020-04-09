@@ -1,5 +1,1 @@
-source/_build
-source/_static
-source/_templates
-__pycache__
-.vscode
+_source

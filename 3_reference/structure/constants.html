@@ -1,0 +1,291 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-CN" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-CN" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>基本参数 &mdash; Manim Chinese Doc 0.01 文档</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/language_data.js"></script>
+        <script src="../../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Mobject" href="../mobject/mobject.html" />
+    <link rel="prev" title="Manimlib架构" href="file.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Manim Chinese Doc
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../1_installation/win.html">Windows</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../1_installation/linux.html">GNU/Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../1_installation/macos.html">Mac OS</a></li>
+</ul>
+<p class="caption"><span class="caption-text">FAQ and Others</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../0_faq_others/faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../0_faq_others/vscode.html">VS Code配置</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tutorial</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../2_tutorial/compile.html">1. 编译选项</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../2_tutorial/hw.html">2. Hello World</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="file.html">Manimlib架构</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">基本参数</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#text">Text设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latex">LaTex编译设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">帮助与报错信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">分辨率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">画面尺寸</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">间距</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">时间</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">向量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">角度</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">颜色</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../mobject/mobject.html">Mobject</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Manim Chinese Doc</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>基本参数</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/3_reference/structure/constants.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>基本参数<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>本节主要参考 <a class="reference external" href="https://manim-tb-manual.000webhostapp.com/tree/constants.html">Constants</a>.</p>
+<div class="section" id="id2">
+<h2>路径<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>当你第一次运行动画编译的时候,终端会出现这样的提示:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Media</span> <span class="n">will</span> <span class="n">be</span> <span class="n">stored</span> <span class="ow">in</span> <span class="n">media</span><span class="o">/.</span> <span class="n">You</span> <span class="n">can</span> <span class="n">change</span> <span class="n">this</span> <span class="n">behavior</span> <span class="n">by</span> <span class="n">writing</span> <span class="n">a</span> <span class="n">different</span> <span class="n">directory</span> <span class="n">to</span> <span class="n">media_dir</span><span class="o">.</span><span class="n">txt</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>这是因为动画文件会被存放在在 <code class="docutils literal notranslate"><span class="pre">media</span></code> 路径中,在你终端运行的主目录下,会出现新的文件</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>.
+├── manim.py
+├── stage_scenes.py
+├── media                  # &lt;- 新目录
+└── manimlib
+    └── media_dir.txt      # &lt;- 新文件
+    └── scene
+        └── media_dir.txt  # &lt;- 新文件
+</pre></div>
+</div>
+<p>如果你不更改媒体路径的话,后面不会再出现这个提示.可以通过更改 <code class="docutils literal notranslate"><span class="pre">media_dir.txt</span></code> 来更改媒体保存路径,这会导致  <code class="docutils literal notranslate"><span class="pre">manimlib/constants.py</span></code> 第 <code class="docutils literal notranslate"><span class="pre">14</span></code> 行的改变.</p>
+<p>更多细节请参考 <a class="reference external" href="如何改变视频输出地址">FAQ 2.7</a>.</p>
+</div>
+<div class="section" id="text">
+<h2>Text设置<a class="headerlink" href="#text" title="永久链接至标题">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">Text</span></code> 类的设置.</p>
+</div>
+<div class="section" id="latex">
+<h2>LaTex编译设置<a class="headerlink" href="#latex" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id3">
+<h2>帮助与报错信息<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id4">
+<h2>分辨率<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id5">
+<h2>画面尺寸<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id6">
+<h2>间距<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id7">
+<h2>时间<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id8">
+<h2>向量<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2>角度<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="id10">
+<h2>颜色<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<a href="https://manim-tb-manual.000webhostapp.com/_static/colors/colors.html"> 颜色盘展示 </a><div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>默认 <code class="docutils literal notranslate"><span class="pre">COLOR</span> <span class="pre">=</span> <span class="pre">COLOR_C</span></code></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mobject/mobject.html" class="btn btn-neutral float-right" title="Mobject" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="file.html" class="btn btn-neutral float-left" title="Manimlib架构" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, 7thD
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
