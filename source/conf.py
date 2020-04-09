@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.append(os.path.abspath('/home/docs/checkouts/readthedocs.org/user_builds/manim-doc/checkouts/latest/source/'))
+sys.path.append(os.path.abspath('source'))
 
 import sphinx_rtd_theme
 
