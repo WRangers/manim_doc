@@ -35,9 +35,23 @@ extensions = [
     "sphinx_rtd_theme",
     "sphinx.ext.autodoc",
     "sphinx.ext.todo",
-    "sphinx.ext.githubpages",
+    # "sphinx.ext.graphviz",
+    # "sphinx.ext.inheritance_diagram",
+    # "sphinx.ext.githubpages",
 ]
-todo_include_todos=True
+# todo_include_todos=True
+# inheritance_graph_attrs = dict(rankdir="LR", size='"6.0, 8.0"',
+#                                fontsize=14, ratio='compress')
+# inheritance_node_attrs = dict(shape='ellipse', fontsize=14, height=0.75,
+#                               color='dodgerblue1', style='filled')                               
+# # 设置 graphviz_dot 路径
+# graphviz_dot = 'dot'
+# # 设置 graphviz_dot_args 的参数，这里默认了默认字体
+# graphviz_dot_args = ['-Gfontname=Georgia', 
+#                      '-Nfontname=Georgia',
+#                      '-Efontname=Georgia']
+# # 输出格式，默认png，这里我用svg矢量图
+# graphviz_output_format = 'svg'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
