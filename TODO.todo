@@ -1,0 +1,21 @@
+.. graphviz::
+
+    digraph inheritance00b8f29e75 { fontsize=14; rankdir=LR; ratio=compress; size="6.0, 8.0"; "manimlib.animation.animation.Animation" [URL="#manimlib.animation.animation.Animation",color=dodgerblue1,fontname="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans",fontsize=14,height=0.75,shape=ellipse,style=filled,target="_top"]; "manimlib.animation.growing.GrowFromPoint" [color=dodgerblue1,fontname="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans",fontsize=14,height=0.75,shape=ellipse,style=filled]; "manimlib.animation.transform.Transform" -> "manimlib.animation.growing.GrowFromPoint" [arrowsize=0.5,style="setlinewidth(0.5)"]; "manimlib.animation.transform.Transform" [color=dodgerblue1,fontname="Vera Sans, DejaVu Sans, Liberation Sans, Arial, Helvetica, sans",fontsize=14,height=0.75,shape=ellipse,style=filled]; "manimlib.animation.animation.Animation" -> "manimlib.animation.transform.Transform" [arrowsize=0.5,style="setlinewidth(0.5)"]; }
+
+.. inheritance-diagram:: manimlib.animation.growing.GrowFromPoint
+..    :top-classes: manimlib.animation.animation.Animation, manimlib.animation.transform
+
+
+.. graphviz::
+
+    digraph abc{
+        a;
+        b;
+        c;
+        d;
+
+        a -> b;
+        b -> d;
+        c -> d;
+    }
+
